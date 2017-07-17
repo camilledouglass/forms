@@ -1,31 +1,113 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Javascript Intro</title>
+    <title>Possible Death</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css">
     <link rel="stylesheet" href="styles/main.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src='scripts/app.js'></script>  
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <script src='scripts/app.js'></script> 
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
     <!-- Compiled and minified JavaScript -->
-    
+
   </head>
   <body>
-      <div class="container">
-      <div class="row">
+    <header>
+      <h1>Are monsters misunderstood?</h1>
+      <h2>You decide!</h2>
+    </header> 
+      <div class="container" id='app'>
+      <div class="row" id='name'>
          <div class="col s3">
-            <p>Welcome</p>
+            <p>The universe has questions...</p>
           </div>
          <div class="col s3">
             <p>Your name?</p>
           </div>
-         <div class="col s6">
            <div class="input-field col s6">
-            <input placeholder="Tell me your name." id="first_name" type="text" class="validate">
-            <a class="waves-effect waves-light btn" id='name_btn'>Enter at your peril</a>
+            <input placeholder="Tell me your name." id="first_name" type="text">
+            <a class="waves-effect waves-light btn" id='name_btn'>Begin</a>
           </div>
+       </div>
+       
+       <div class='row' id='first-step'>
+          <p>You walk into?</p>
+          <div class='col s6'>
+            <a class="waves-effect waves-light btn" id='choice-one'>A cave</a>
+         </div>
+         <div class='col s6'>
+          <a class="waves-effect waves-light btn" id='choice-two'> Abandoned industrial park</a>
+        </div>
+       </div>
+       
+       <div class='row' id='second-step'>
+          <p>Are you afraid of monsters?</p>
+         <div class='col s6'>
+         <a class="waves-effect waves-light btn" id='choice-three'>Yes!</a>
+         </div>
+         <div class='col s6'>
+          <a class="waves-effect waves-light btn" id='choice-four'>No</a>
+         </div>
+       </div>
+
+       <div class='row' id='third-step'>
+          <p>A grotesque humanoid creature jumps out at you. What do you do?</p>
+         <div class='col s6'>
+         <a class="waves-effect waves-light btn" id='choice-five'>Throw salt</a>
+         </div>
+         <div class='col s6'>
+          <a class="waves-effect waves-light btn" id='choice-six'>Ask for directions</a>
+         </div>
+       </div>
+
+       <div class='row' id='fourth-step'>
+          <p>Hunger gnaws at you. What do you eat?</p>
+         <div class='col s6'>
+         <a class="waves-effect waves-light btn" id='choice-seven'>A luna bar</a>
+         </div>
+         <div class='col s6'>
+          <a class="waves-effect waves-light btn" id='choice-eight'>Rats you hunt</a>
+         </div>
+       </div>
+
+       <div class='row' id='fifth-step'>
+          <p>You see another person, trapped, surrounded by the earlier monsters. What do you do?</p>
+         <div class='col s6'>
+         <a class="waves-effect waves-light btn" id='choice-nine'>Throw salt again</a>
+         </div>
+         <div class='col s6'>
+          <a class="waves-effect waves-light btn" id='choice-ten'>They're helping</a>
+         </div>
+       </div>
+
+       <div class='row' id='sixth-step'>
+          <p>You find your way back to civilization. What do you do first?</p>
+         <div class='col s6'>
+         <a class="waves-effect waves-light btn" id='choice-eleven'>Tell Mulder</a>
+         </div>
+         <div class='col s6'>
+          <a class="waves-effect waves-light btn" id='choice-twelve'>Go home</a>
+         </div>
+       </div>
+
+       <div class='row' id='seventh-step'>
+          <p>A reporter appears at your door to ask about the 'incident'. What do you do?</p>
+         <div class='col s6'>
+         <a class="waves-effect waves-light btn" id='choice-thirteen'>Slam the door</a>
+         </div>
+         <div class='col s6'>
+          <a class="waves-effect waves-light btn" id='choice-fourteen'>Ask for money</a>
+         </div>
+       </div>
+
+       <div class='row' id='eighth-step'>
+          <p>The staory comes out whether you wanted it to or not. What do you do?</p>
+         <div class='col s6'>
+         <a class="waves-effect waves-light btn" id='choice-fifteen'>Go into hiding</a>
+         </div>
+         <div class='col s6'>
+          <a class="waves-effect waves-light btn" id='choice-sixteen'>Get an agent</a>
          </div>
        </div>
      </div>
